@@ -1,1 +1,1 @@
-# Java
+# Convergence Programming exercise codes
