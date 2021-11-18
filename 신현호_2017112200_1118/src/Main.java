@@ -1,0 +1,48 @@
+
+class Animal{
+	private String type;
+	
+
+	Animal(String type){
+		this.type = type;
+	}
+	
+	String getType() {
+		return type;
+	}
+
+	void setType(String type) {
+		this.type = type;
+	}
+
+	String get_feed() {
+		return type;
+	}
+}
+
+class Fish extends Animal{
+	private int depth;
+	
+	Fish(String type, int depth){
+		super( type );
+		this.depth = depth;
+	}
+	
+	void show() {
+		System.out.println("¸ÔÀº °Í: "+  getType() +", ÇöÀç ¼ö½É: "+depth+"m");
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Animal Tiger = new Animal("Åä³¢");
+	    System.out.println("¸ÔÀº °Í: "+Tiger.get_feed());
+        
+	    Fish Shark = new Fish("ÂüÄ¡",30);
+	    Shark.show();
+	    
+	}
+    
+}
